@@ -1,0 +1,117 @@
+/* Patrones globales */
+
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; }
+
+/* Títulos principales y subtítulos: Barlow */
+h1 { font-family: 'Roboto', sans-serif; }
+
+h1, figure {margin: 0;}
+
+header{ position: fixed;
+        width: 100%;
+        display: block;
+        height: 90px;
+        margin: 0;
+        float: none;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        background: rgb(236, 220, 224);
+        background-size: cover;
+    }
+
+    header article{
+        width: 1000px;
+        height: 90px;
+        margin: 0;
+        float: none;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        header article figure{  width: 90px;
+                                height: 90px;
+                                margin: 0;
+                                float: left;
+                                position: relative;
+                            }
+            header article figure a{    width: 100%;
+                                        height: auto;
+                                        margin: 0 auto;
+                                        float: left;
+                                        position: relative;
+                                        display: block;
+                                        margin-top: 20px;
+                                        transition:all 0.3 ease-in;
+                                    }
+                                        
+                header article figure a img{    width: 100%;
+                                                height: auto;
+                                                margin: 0 auto;
+                                                float: left;
+                                                position: relative;
+                                                display: block;}
+                header article figure a:hover{  transition:all 0.3 ease-in;
+                                                transform: scale(1.05);
+                                            }
+
+
+        header article nav#menu-principal{  width: 600px;
+                                            height: 50px;
+                                            float: right;
+                                            position: relative;
+                                            margin: 40px;}
+            nav#menu-principal a{   margin: 0 20px;
+                                    text-decoration: none;
+                                    color: black;
+                                    font-weight: 500;  }
+            nav#menu-principal a:hover{ font-weight: 800;
+                                        font-size: 1.1em;
+                                        }
+            nav#menu-principal a#ult{
+                padding: 10px 20px;
+                border-radius: 25px;
+                background: rgb(252, 107, 139);
+                margin-right: 10px;
+                text-decoration: none;
+                transition: opacity .3s ease;
+                color: white;}
+            nav#menu-principal a#ult:hover{ transition:all 0.3 ease-in;
+                                            transform: scale(1.05);}
+        
+
+
+
+footer{ position: absolute; 
+        bottom: 0;  
+        left: 0; right: 0;
+        background: rgb(82, 80, 80);
+        height: auto;
+        padding-top: 30px;
+        width: 100%;
+        color: #fff;}
+    footer article{ display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;}
+        footer article div{}
+        footer article div img {}
+
+        footer div{}
+        footer div a{}
+
+
+
+
+
+
+
+
+
+
+
+
+
